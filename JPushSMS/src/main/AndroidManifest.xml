@@ -22,6 +22,9 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+
+
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -29,7 +32,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -37,7 +41,7 @@
             </intent-filter>
         </activity>
 
-
+        <meta-data android:name="JPUSH_APPKEY" android:value="cbcbb82e91f584baea346bed"/>
         <!-- Required SDK 核心功能-->
         <!-- 可配置android:process参数将PushService放在其他进程中 -->
         <service
@@ -95,6 +99,18 @@
 
         <!-- Required SDK核心功能-->
         <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+
+        <activity
+            android:name=".MainSmsActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity
+            android:name=".MainVoiceActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
 
     </application>
 
