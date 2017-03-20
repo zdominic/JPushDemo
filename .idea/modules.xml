@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JPushDemo.iml" filepath="$PROJECT_DIR$/JPushDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPushSMS/JPushSMS.iml" filepath="$PROJECT_DIR$/JPushSMS/JPushSMS.iml" />
     </modules>
   </component>
 </project>
